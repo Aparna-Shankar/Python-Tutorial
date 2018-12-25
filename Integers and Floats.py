@@ -21,17 +21,17 @@ num = 3.14
 print(type(num))
 print(abs(num))
 print(round(num))
-print(round(num,1)) #Round to the 1st decimal
+print(round(num, 1))  # Round to the 1st decimal
 
 num1 = '100'
 num2 = '200'
 
-#Casting to an integer
+# Casting to an integer
 num1 = int(num1)
 num2 = int(num2)
 print (num1 + num2)
 
-#To evaluate the value of a string
+# To evaluate the value of a string
 n1 = eval('341')
 print(n1)
 n2 = eval('341.7 + 56')
