@@ -30,8 +30,8 @@ print(message)
 
 
 # To see all available attributes and methods that we have access to
-print(dir(message))
-print(help(str))
-print(help(name.lower))
+# print(dir(message))
+# print(help(str))
+# print(help(name.lower))
 
-# print(help(str.count))
+# # print(help(str.count))
