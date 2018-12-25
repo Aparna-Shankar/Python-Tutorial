@@ -1,4 +1,4 @@
-
+# Pthon examples for 'if' & 'elif'
 # Comparisons
 # Equal			:	==
 # Not Equal		:	!=
@@ -8,7 +8,7 @@
 # LE			:	<=
 # Obj Identity	:	is ( to check if they have the same object in memory)
 
-# Python doesn't have switch case 
+# Python doesn't have switch case
 
 
 language = 'Java'
@@ -47,7 +47,7 @@ print(a is b) # returns False as there sre 2 different objs in memory
 
 b= a
 
-print(id(a)) 
+print(id(a))
 print(id(b))
 
 print(a is b)
@@ -68,4 +68,4 @@ print(a is b)
 if condition:
     print('Evaluated to True')
 else:
-    print('Evaluated to False') 
+    print('Evaluated to False')
