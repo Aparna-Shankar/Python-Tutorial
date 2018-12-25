@@ -1,4 +1,4 @@
-
+# Example for empty sets, tuples & lists
 #Empty list
 empty_list = []
 empty_list = list()
