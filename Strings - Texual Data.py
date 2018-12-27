@@ -3,6 +3,7 @@ print('Hello World')
 greeting = 'Hello'
 name = 'Abhi'
 
+#Concatenation
 message = greeting + name
 
 print(message)
@@ -24,7 +25,7 @@ print(message.replace('Abhi', 'Aparna'))
 #Concatenation
 message = '{}, {}. Welcome!'.format(greeting, name)
 
-#Using F strings
+#Using F strings for string formatting
 message = f'{greeting}, {name.upper()}. Welcome to the world of Python!'
 print(message)
 

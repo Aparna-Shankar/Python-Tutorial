@@ -2,10 +2,10 @@
 # Addition:       3 + 2
 # Subtraction:    3 - 2
 # Multiplication: 3 * 2
-# Division:       3 / 2
-# Floor Division: 3 // 2
+# Division:       3 / 2 - Floating Point division
+# Floor Division: 3 // 2 - Integer/Whole number division (without precision)
 # Exponent:       3 ** 2
-# Modulus:        3 % 2
+# Modulus:        3 % 2 - Remainder
 
 
 # Comparisons:
