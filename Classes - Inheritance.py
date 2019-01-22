@@ -51,10 +51,10 @@ class Manager(Employee):  # Manager class inherits from Employee
         for emp in self.employees:
             print('-->', emp.fullname())
 
-# dev_1 = Developer('Aparna', 'Shankar', 60000)
-# dev_2 = Employee('Abhi', 'Pednekar', 60000)
+dev_1 = Developer('Aparna', 'Shankar', 60000, 'Python')
+dev_2 = Employee('Abhi', 'Pednekar', 60000)
 
-# # print(help(Developer))
+# print(help(Developer))
 
 # print(dev_1.pay)
 # dev_1.apply_raise()
@@ -68,19 +68,18 @@ dev_2 = Developer('Abhi', 'Pednekar', 60000, 'Java')
 
 mgr_1 = Manager('Sreeja', 'PK', 90000, [dev_1])
 
-# print(help(Developer))
 
 # print(dev_1.email)
-# mgr_1.prog_lang
+# # mgr_1.prog_lang # This will throw an error as manager doesn't inherit from Developer but only from Employee
 # print(dev_2.prog_lang)
 # print(mgr_1.email)
 
 
-# mgr_1.print_emps()
-# mgr_1.add_emp(dev_2)
-# mgr_1.print_emps()
-# mgr_1.remove_emp(dev_1)
-# mgr_1.print_emps()
-
+mgr_1.print_emps()
+mgr_1.add_emp(dev_2)
+mgr_1.print_emps()
+mgr_1.remove_emp(dev_1)
+mgr_1.print_emps()
+#
 print(isinstance(mgr_1, Developer)) # for instances
 print(issubclass(Manager, Employee)) # for classes

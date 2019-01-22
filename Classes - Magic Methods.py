@@ -11,7 +11,10 @@ class Employee:
         self.last = last
         self.pay = pay
         self.email = f'{first}_{last}@company.com'
-        Employee.num_of_emp += 1  # here we don't need to access it at an instance level because each employee instance will not have a separate employee count
+
+        """ Here we don't need to access it at an instance level 
+        because each employee instance will not have a separate employee count"""
+        Employee.num_of_emp += 1
 
     def fullname(self):
         return f'{self.first} {self.last}'
@@ -19,15 +22,16 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
-    # Representation of the object - Can be used in logs etc
+    """Representation of the object - Can be used in logs etc. To look at the object & understand what it is"""
     def __repr__(self):
         return f'Employee({self.first}, {self.last}, {self.pay})'
 
-    # Usually represents the values in the object. Str method takes precendence over repr
+    """Usually represents the values in the object. Str method takes precedence over repr"""
 
     def __str__(self):
-        return f'{self.fullname()} - {self.pay}'
+        return f'Employee Details : {self.fullname()} - {self.pay}'
 
+    """It is the best practice to have a repr & str methods for every class that you code"""
     def __add__(self, other):
         """ Dunder method redefines add function to return the sum of salaries of the 2 employees passed """
         return self.pay + other.pay
@@ -40,7 +44,7 @@ class Employee:
 
 
 empl_1 = Employee('Aparna', 'Shankar', 60000)
-empl_2 = Employee('Abhi', 'Pednekar', 60000)
+empl_2 = Employee('Abhishek', 'Pednekar', 60000)
 
 # print(empl_1)
 # print(repr(empl_1))
@@ -48,11 +52,11 @@ empl_2 = Employee('Abhi', 'Pednekar', 60000)
 
 # print(int.__add__(1,2))
 # print(str.__add__('Abhi', 'Aparna'))
-
-print(empl_1 + empl_2)
+#
+# print(empl_1 + empl_2)
 
 
 print(len('test'))
 print('test'.__len__())
 
-print(len(empl_1))
+# print(len(empl_1))

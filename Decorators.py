@@ -8,11 +8,16 @@ class Employee:
         self.last = last
         self.pay = pay
 
+    """ Property decorators are used to define functions that accept only self as the object. Usually they do not perform any
+     actions. The best suited functions that can be defined as decorators are functions just does some calculation and
+     return the value"""
     @property
     def fullname(self):
         return f'{self.first} {self.last}'
 
-    # Property decorator allows us to access a method just like we access an attribute. If the email method was not defined with a property decorator, we would have to get the email by calling it as a method.
+    """Property decorator allows us to access a method just like we access an attribute. 
+    If the email method was not defined with a property decorator, we would have to get the email by calling it as a method.
+    """
     @property
     def email(self):
         return f'{self.first}_{self.last}@company.com'
