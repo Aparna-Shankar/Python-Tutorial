@@ -1,8 +1,12 @@
 import json
 
 
- # load the json file into a python object
-with open('States.json') as f:
+ # load the JSON file into a python object
+# file_dict = open('States.json','r')
+# data = json.load(file_dict)
+# file_dict.close()
+
+with open('States.json', 'r') as f:
     data = json.load(f)
 
 for state in data['states']:
